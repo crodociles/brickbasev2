@@ -1,0 +1,119 @@
+.ssi-container{
+    display:flex;
+    flex-direction: row;
+    color:#111;
+    border: 3px solid $main-color1;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #777;
+    background-color: $main-color-bg1;
+    margin-bottom: 15px;
+    padding:10px;
+    .ssi-img{
+        height:100px;
+        width: 100px;
+        border: 2px solid #555;
+        margin-right: 5px;
+    }
+    .ssi-details-container{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        .ssi-top-row{
+            display: flex;
+            flex-direction: row;
+            width:100%;
+            .ssi-num{
+                text-align: left;
+                flex-grow: 1;
+                font-size: 1.3rem;
+                font-weight:300;
+            }
+            .ssi-date-price{
+                display:flex;
+                flex-direction: row;
+                line-height: 40px;
+                .ssi-date-price-label{
+                    color:#fff;
+                    background-color: #000;
+                    width: 100px;
+                }
+                .ssi-date-price-content{
+                    flex-grow: 1;
+                    text-align: center;
+                    border: 2px solid black;
+                    font-size: 1.3rem;
+                }
+            }
+            .ssi-archived{
+                background-color: $main-color1;
+                color:#fff;
+                padding: 0 40px;
+                line-height: 40px;
+                border: 2px solid #000;
+            }
+        }
+        .ssi-bottom-row{
+            .ssi-name{
+                font-size: 1.8rem;
+                text-align: left;
+            }
+            
+        }
+        .ssi-num-mob{
+            display:none;
+        }
+    }
+}
+.ssi-container:hover{
+    color:#111;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+    .ssi-top-row{
+        height:40px;
+        .ssi-date-price{
+            width:230px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .ssi-container{
+        width:95%;
+        margin:20px auto;
+        flex-direction: column;
+        .ssi-img-container{
+            width:100%;
+            .ssi-img{
+                width:70%;
+                height:auto;
+            }
+        }
+        .ssi-details-container{
+            display: flex;
+            flex-direction: column-reverse;
+            flex-grow: 1;
+            .ssi-top-row{
+                flex-direction: column-reverse;
+                .ssi-num{
+
+                    display:none;
+                }
+
+            }
+            .ssi-bottom-row{
+                .ssi-name{
+                    font-size: 1.4rem;
+                }
+            }
+            .ssi-num-mob{
+                display:block;
+                text-align: left;
+                font-size: 1.2rem;
+                font-weight:300;
+                margin-top:10px;
+            }
+        }
+    }
+}

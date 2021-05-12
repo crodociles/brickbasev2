@@ -1,0 +1,31 @@
+#sidebar-container{
+    width: 15%;
+    height:100vh;
+    position: absolute;
+    top: 70px;
+    border-right: 1px solid #999;
+    padding-top: 20px;
+    .sidebar-link-container{
+        height: 30px;
+        text-align: right;
+        padding-right: 20px;
+        a{
+            color: #333;
+            text-decoration: none;
+            font-size:20px;
+            font-weight: 300;
+        }
+    }
+    .sidebar-link-container:hover{
+        padding-right: 10px;
+        a{
+            font-weight: 400;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #sidebar-container{
+        display:none;
+    }
+}

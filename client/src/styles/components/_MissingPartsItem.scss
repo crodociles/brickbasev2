@@ -1,0 +1,87 @@
+.mpi-container{
+    display:flex;
+    flex-direction: column;
+    width:95%;
+    margin: 0 auto 40px auto;
+    .mpi-set-title{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 3px solid $main-color1;
+        cursor: pointer;
+        .mpi-set-title-text{
+            flex-grow: 1;
+            text-align: left;
+            h4{
+                padding:0 20px;margin:0;
+            }
+            h2{
+                padding:0;margin:0;
+            }
+        }
+        .mpi-set-arrow{
+            .mpi-icon-open{
+                transform: rotate(180deg);
+                transition: transform 0.5s;
+            }
+            .mpi-icon-closed{
+                transform: rotate(270deg);
+                transition: transform 0.5s;
+            }
+        }
+    }
+    .mpi-all-part-container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .mpi-part-container{
+            border-radius: 10px;
+            box-shadow: 0 5px 10px #777;
+            background-color: $main-color-bg1;
+            border: 3px solid $main-color1;
+            margin: 10px;
+            display:flex;
+            flex-direction: column;
+            .mpi-part-img-container{
+                display: flex;
+                justify-content: center;
+                align-items:flex-end;
+                .mpi-part-img{
+                border: 1px solid #555;
+                    box-shadow: 0 5px 10px #777;
+                    margin:0  0 10px 0;
+                }
+            }
+            .mpi-part-quant{
+                font-size: 1.5rem;
+                background-color: #000;
+                color:#fff;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+            }
+            .mpi-part-name{
+                font-size:1.2rem;
+                flex-grow: 1;
+            }
+        }
+    }
+    .mpi-closed{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .mpi-part-container{
+        width: 150px;
+        .mpi-part-img{
+            width:90%;
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .mpi-part-img{
+        width:50%;
+    }
+}

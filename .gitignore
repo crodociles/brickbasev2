@@ -1,0 +1,4 @@
+api/routes/mysql/apikey.js
+node_modules
+api/node_modules
+client/node_modules

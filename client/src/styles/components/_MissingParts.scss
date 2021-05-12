@@ -1,0 +1,15 @@
+#mp-container{
+    padding-top:100px;
+    width: 68%;
+    margin:auto;
+    #mp-items-container{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #mp-container{
+        width: 100%;
+    }
+}

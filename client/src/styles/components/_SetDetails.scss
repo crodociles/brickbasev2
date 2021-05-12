@@ -1,0 +1,186 @@
+#sd-container{
+    padding-top:100px;
+    width:68%;
+    margin:auto;
+    #sd-details-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        #sd-headers-notes-container{
+                text-align: left;
+            #sd-headers{
+                margin-bottom: 30px;
+                #sd-set-name{
+                    font-size:2.7rem;
+                    font-weight: 300;
+                    margin-bottom:-10px;
+                }
+                #sd-set-num{
+                    font-size:1.3rem;
+                    font-weight:400;
+                    color: #555;
+                }
+            }
+            #sd-instructions-container{
+                display:flex;
+                flex-direction: row;
+                #sd-instructions-text{
+                    font-size: 1.1rem;
+                }
+                #sd-instructions-input{
+                    margin:5px;
+                }
+            }
+            .sd-notes-container{
+                display:flex;
+                flex-direction: column;
+                margin-top:10px;
+                .sd-notes-title{
+                    font-size: 25px;
+                    color: $main-color1;
+                    width: 100px;
+                    padding-left: 15px;
+                    margin-bottom: -5px;
+                }
+                .sd-notes-text{
+                    width: 300px;
+                    height: 100px;
+                    border: 1px solid #555;
+                    border-radius:5px;
+                    border-top-left-radius: 0;
+                    padding: 10px;
+                }
+                .sd-notes-btn{
+                    background-color: $main-color1;
+                    color:#fff;
+                    width:100px;
+                    margin:10px 0;
+                }
+            }
+        }
+        #sd-img-container{
+            border: 2px solid $main-color1;
+            box-shadow: 0 0 10px #555;
+            display:flex;
+            align-items: center;
+            #sd-img{
+                max-width: 400px;
+            }
+        }
+    }
+    #sdp-dd-hide{
+        display:none;
+    }
+    #sdp-dd{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        #sdp-dd-btn{
+            display:inline-block;
+            border: 1px solid black;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+            padding:2px;
+            border-radius: 3px;
+            box-shadow: 2px 2px 3px #555;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+        .sdp-hide-menu{
+            display:none;
+        }
+        #sdp-dd-menu{
+            border:2px solid black;
+            box-shadow: 0 0 5px #444;
+            position: absolute;
+            margin-top: 75px;
+            background-color: white;
+            width: 200px;
+            border-radius: 8px;
+            border-top-right-radius: 0;
+            .sdp-dd-item{
+                cursor: pointer;
+                padding: 5px;
+            }
+            .sdp-dd-item:hover{
+                background-color: lighten($main-color1,60%);
+            }
+        }
+    }
+}
+#sd-parts-container{
+    padding-top:20px;
+    width:68%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sd-sold{
+    margin: auto;
+    margin-top:20px;
+    width:68%;
+    #sd-sold-details-container{
+        border: 3px solid $main-color1;
+        padding: 0 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        #sd-sold-title{
+            color:$main-color1;
+            font-size: 3rem;
+        }
+        .sd-sold-detail{
+            font-size: 1.5rem;
+        }
+        .sd-sold-price{
+            font-size: 2.5rem;
+        }
+        .sd-sold-date{
+            font-size: 1.2rem;
+        }
+    }
+    #sd-relist{
+        display:flex;
+        flex-direction: column;
+        #sd-relist-btn{
+            font-size: 1.3rem;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+        }
+        #sd-archive-btn{
+            font-size: 1.3rem;
+            height:40px;
+        }
+    }
+    #sd-archived{
+        color:#fff;
+        background-color: $main-color1;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+.hide{
+    display:none;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    #sd-container{
+        width:95%;
+        #sd-details-container{
+            flex-direction: column-reverse;
+            #sd-img-container{
+                width:100%;
+                margin:auto;
+                #sd-img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    #sd-parts-container{
+        width:100%;
+    }
+}

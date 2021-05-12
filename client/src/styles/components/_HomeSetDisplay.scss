@@ -1,0 +1,87 @@
+#hsd-container{
+    padding:100px 0;
+    a{
+        color:#333;
+        text-decoration: none;
+    }
+    #hsd-filter-wrapper{
+        #hsd-filter-label{
+            font-size: 30px;
+            color:#777;
+            font-weight:300;
+        }
+        #hsd-filter-input{
+            height:40px;
+            width: 300px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 0 5px;
+        }
+    }
+    #hsd-sort-container{
+        width: 100%;
+        padding: 20px;
+        #hsd-sort-select{
+            color: #666;
+            text-align: right;
+            padding-left: 5px;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+            height:40px;
+            width: 200px;
+        }
+    }
+    #hsd-add-new{
+        border: 3px solid $main-color1;
+        box-shadow: 0 5px 10px #777;
+        // background-color: $main-color-bg1;
+        margin:auto;
+        a{
+            display:flex;
+            flex-direction: row;
+            #hsd-add-new-img-container{
+                width:130px;
+                #hsd-add-new-img{
+                    height:80px;width:80px;
+                }
+            }
+            #hsd-add-new-text{
+                font-size: 2rem;
+                line-height: 80px;
+                padding-left:30px;
+                text-decoration: underline;
+                text-decoration-thickness:3px;
+                flex-grow: 1;
+                text-align: left;
+            }
+            #hsd-add-new-text>a:hover{
+                color:darken($main-color1,30%);
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #hsd-sort-container{
+        flex-direction: row;
+    }
+    #hsd-container{
+        width:98%;
+        margin:auto;
+    }
+    #hsd-add-new{
+        width:95%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #hsd-container{
+        width: 68%;
+        margin:auto;
+    }
+    #hsd-add-new{
+        width:35%
+    }
+}

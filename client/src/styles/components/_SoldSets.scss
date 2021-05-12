@@ -1,0 +1,12 @@
+#ss-container{
+    padding-top:100px;
+    padding-bottom: 50px;
+    width: 68%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    #ss-container{
+        width:100%;
+    }
+}

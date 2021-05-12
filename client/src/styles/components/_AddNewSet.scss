@@ -1,0 +1,89 @@
+#ans-container{
+    padding-top: 100px;
+    #ans-search-form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #ans-search-input{
+        width:35%; height: 40px;
+        padding:5px;
+        font-size: 25px;
+        line-height: 40px;
+        border: 1px solid #555;
+        border-radius: 5px;
+    }    
+    #ans-search-btn{
+        height:40px; width: 100px;
+        border-radius: 5px;
+        border: none;
+        background-color: $main-color1;
+        color:white;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+    #ans-num-results{
+        margin-top:20px;
+        font-size:24px;
+    }
+    #ans-results-container{
+        width: 68%;
+        margin:auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .ans-result-item-container{
+            width: 250px;
+            border: 3px solid $main-color1;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px #777;
+            background-color: $main-color-bg1;
+            min-height: 350px;
+            padding: 20px 20px 10px 20px;
+            box-sizing: border-box;
+            margin: 20px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-between;
+            .ans-result-item-name{
+                font-size: 24px;
+                font-weight: 400;
+            }
+            .ans-result-item-img-container{
+                .ans-result-item-img{
+                    width:100%;
+                    max-height: 200px;
+                    object-fit: contain;
+                    border:1px solid #444;
+                    box-shadow: 0 0 5px #777;
+                }
+            }
+            .ans-add-btn{
+                height:40px; width: 220px;
+                font-size: 18px;
+                border-radius: 5px;
+                border: none;
+                background-color: $main-color1;
+                color:white;
+                cursor: pointer;
+            }
+            .ans-add-btn:disabled{
+                background-color: #555;
+                color:#bbb;
+            }
+        }
+        #ans-spinner{
+            margin: 70px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #ans-container{
+        #ans-search-input{
+            width: 80%;
+        }
+    }
+}
